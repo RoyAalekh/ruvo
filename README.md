@@ -19,7 +19,8 @@
 To install Ruvo, simply run:
 
 ```bash
-pip install ruvo
+pip install git+https://github.com/RoyAalekh/ruvo.git
+
 ```
 
 ---
