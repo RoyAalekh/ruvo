@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ruvo"
+version = "0.1.0"
+description = "A powerful Python virtual environment manager with support for multiple environment types"
+readme = "README.md"
+authors = [{ name = "Aalekh Roy", email = "roy.aalekh@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["ruvo", "virtual environment", "python", "development", "tools", "venv"]
+requires-python = ">=3.8"
+dependencies = [
+    "setuptools>=75.3.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/RoyAalekh/ruvo"
+Repository = "https://github.com/RoyAalekh/ruvo.git"
+Documentation = "https://github.com/RoyAalekh/ruvo#readme"
+Issues = "https://github.com/RoyAalekh/ruvo/issues"
+
+[tool.setuptools]
+package-dir = { "" = "." }
+package-data = { "ruvo" = ["bin/*"] }
+
+[project.scripts]
+venv-manager = "ruvo.cli:main"
