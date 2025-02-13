@@ -38,4 +38,4 @@ package-dir = { "" = "." }
 package-data = { "ruvo" = ["bin/*"] }
 
 [project.scripts]
-venv-manager = "ruvo.cli:main"
+ruvo = "ruvo.cli:main"
