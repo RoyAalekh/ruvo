@@ -6,7 +6,7 @@ setup(
     packages=["ruvo"],
     entry_points={
         "console_scripts": [
-            "venv-manager=ruvo.cli:main",
+            "ruvo=ruvo.cli:main",
         ],
     },
 )
