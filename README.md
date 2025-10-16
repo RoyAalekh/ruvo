@@ -1,72 +1,98 @@
-# Ruvo - A Fast, Lightweight Virtual Environment Manager
+# Ruvo - Fast, Lightweight Virtual Environment Manager
 
+**Ruvo** is a high-performance, lightweight Rust-based virtual environment manager for Python. It simplifies creating, managing, and switching between virtual environments with speed and efficiency. Designed for developers who value performance and simplicity, Ruvo provides a streamlined experience for Python environment management.
 
-**Ruvo** is a blazing-fast, lightweight **Rust-based virtual environment manager** for Python. It simplifies creating, managing, and switching between virtual environments with **speed and efficiency**. Designed for developers who value performance and simplicity, Ruvo eliminates bloat and provides a **seamless** experience for managing your Python environments.
+## Features
 
-## 🚀 Features
+- **High Performance** - Built in Rust for optimal speed and efficiency
+- **Multiple Environment Support** - Compatible with `venv`, `poetry`, and `uv`
+- **Simple Command Interface** - Intuitive CLI for quick environment management
+- **Minimal Dependencies** - Lightweight design without unnecessary bloat
+- **Python Version Control** - Create environments with specific Python versions
+- **Instant Operations** - Fast activation, creation, and deletion of environments
 
-✅ **Fast & Lightweight** - Built in Rust for optimal performance.  
-✅ **Multiple Environment Support** - Works with `venv`, `poetry` and `uv`.  
-✅ **Simple Commands** - Easy to use CLI for quick environment management.  
-✅ **Minimal Dependencies** - No unnecessary bloat, just what you need.  
-✅ **Python Version Control** - Create environments with specific Python versions.  
-✅ **Instant Activation & Deletion** - Manage environments effortlessly.
+## Installation
 
----
-
-## 📥 Installation
-
-To install Ruvo, simply run:
+Install Ruvo directly from GitHub:
 
 ```bash
 pip install git+https://github.com/RoyAalekh/ruvo.git
-
 ```
 
----
+## Usage
 
-## 🔧 Usage
-
-### 🎯 Create a New Environment
+### Create a New Environment
 
 ```bash
 ruvo create my-env --env-type venv
 ruvo create poetry-env --env-type poetry --python-version 3.11
 ```
 
-### 📜 List Available Environments
+### List Available Environments
 
 ```bash
 ruvo list
 ```
 
-### 🚀 Activate an Environment
+### Activate an Environment
 
 ```bash
 ruvo activate my-env
 ```
 
-### 🗑️ Delete an Environment
+### Delete an Environment
 
 ```bash
 ruvo delete my-env
 ```
 
+## Why Choose Ruvo?
+
+- **Performance**: Rust-based implementation outperforms traditional environment managers
+- **Developer Experience**: Simple commands, intuitive design, and easy setup
+- **Cross-Platform**: Seamless operation on Windows, macOS, and Linux
+- **Versatility**: Support for multiple environment types (`venv`, `poetry`, `uv`)
+- **Efficiency**: Minimal resource usage and fast execution times
+
+## Command Reference
+
+| Command | Description | Example |
+|---------|-------------|----------|
+| `create` | Create new virtual environment | `ruvo create myenv --env-type venv` |
+| `list` | List all environments | `ruvo list` |
+| `activate` | Activate environment | `ruvo activate myenv` |
+| `delete` | Remove environment | `ruvo delete myenv` |
+
+## Supported Environment Types
+
+- **venv** - Python's built-in virtual environment
+- **poetry** - Poetry-managed environments
+- **uv** - Ultra-fast Python package installer environments
+
+## Requirements
+
+- Python 3.7+
+- Rust (for building from source)
+- Compatible with Windows, macOS, and Linux
+
+## Contributing
+
+Contributions are welcome! To contribute:
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## Support
+
+- [GitHub Issues](https://github.com/RoyAalekh/ruvo/issues) - Report bugs and request features
+- [Discussions](https://github.com/RoyAalekh/ruvo/discussions) - Share ideas and get help
+
+## License
+
+MIT License - see LICENSE file for details.
+
 ---
 
-## 📌 Why Choose Ruvo?
-
-🔹 **Lightning-fast:** Built with Rust, Ruvo outperforms traditional environment managers.  
-🔹 **Developer-friendly:** Simple commands, intuitive design, and easy setup.  
-🔹 **Cross-platform:** Works seamlessly on Windows, macOS, and Linux.  
-🔹 **Versatile:** Supports both `venv`, `poetry` and `uv` environments.
-
----
-
-## 🌍 Community & Support
-
-If you love Ruvo and want to contribute or get help, join us:
-- [GitHub Issues](https://github.com/RoyAalekh/ruvo/issues) - Report bugs and request features.
-- [Discussions](https://github.com/RoyAalekh/ruvo/discussions) - Share ideas and get help.
-
-🚀 **Speed up your Python workflow with Ruvo today!**
+Speed up your Python development workflow with Ruvo's efficient environment management.
